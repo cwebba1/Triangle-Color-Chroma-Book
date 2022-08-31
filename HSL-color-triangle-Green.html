@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSLA Color Triangle – Green</title>
+<!-- HSL-color-triangle-Green.htmlHSL-color-triangle-06-Green.html
+    HSL-color-triangle-05-Orange.html
+    HSL-color-triangle-04-Cyan.html
+    HSL-color-triangle-03.html
+    HSL-test-01.html -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+     --font-serif: ui-serif,serif;
+   --font-brand-sans: "Ubuntu", Verdana, "Corbel", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    --font-sans: 'Roboto Condensed' "Open Sans", system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans, Arial, "Helvetica Neue", Helvetica,sans-serif;
+
+/* These are the Active Properties */
+/* Row Two */
+--ffe6e6:hsla(120, 100%, 95.1%, 1);
+--dabcbc:hsla(120, 28.85%, 79.61%, 1);
+--b79393:hsla(120, 20%, 64.71%, 1);
+--946c6c:hsla(120, 15.75%, 50.2%, 1);
+--714648:hsla(120, 23.5%, 35.88%, 1);
+--502326:hsla(120, 39.13%, 22.55%, 1);
+--300000:hsla(120, 100%, 9.41%, 1);
+
+/* Row Three */
+--ffc9c7:hsla(120, 100%, 89.02%,1);
+--db9f9d:hsla(120, 46.27%, 73.73%,1);
+--b87776:hsla(120, 31.73%, 59.22%,1);
+--955150:hsla(120, 30.13%, 44.9%,1);
+--722b2e:hsla(120, 45.22%, 30.78%,1);
+--4f000d:hsla(120, 100%, 15.49%,1);
+
+/* Row Four */
+--ffaba6:hsla(120, 100%, 82.55%,1);
+--dc837e:hsla(120, 57.32%, 67.84%,1);
+--b95b58:hsla(120, 40.93%, 53.53%,1);
+--953434:hsla(120, 48.26%, 39.41%,1);
+--710014:hsla(120, 100%, 22.16%,1);
+
+/* Row Five red -4*/
+--ff8c83:hsla(120, 100%, 75.69%);
+--dc645c:hsla(120, 64.65%, 61.18%);
+--b83b38:hsla(120, 53.33%, 47.06%);
+--940016:hsla(120, 100%, 29.02%);
+
+/* Row Six red -3*/
+--ff6c5e:hsla(120, 100%, 68.43%,1);
+--db4239:hsla(120, 69.23%, 54.12%,1);
+--b70015:hsla(120, 100%, 35.88%,1);
+
+/* Row Seven red -2*/
+--ff4737:hsla(120, 100%, 60.78%,1);
+--db0010:hsla(120, 100%, 42.94%,1);
+
+/* Row Eight red -1*/
+--ff0000:hsla(120, 100%, 50%,1);
+
+}
+
+.white {background:#ffffff;}
+.grey1 {background:#d6d6d6;}
+.grey2 {background:#afafaf;}
+.grey3 {background:#898989;}
+.grey4 {background:#656565;}
+.grey5 {background:#434343;}
+.grey6 {background:#242424;}
+.black {background:#000000;}
+
+
+
+.dot { width:4.5em; height:4.5em; border-radius:50%; border:1px solid #000; display:flex; justify-content:center; }
+
+.dot span {align-self:center;}
+
+html { font-size:16px;
+line-height:1.5;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  display:var(--disp-flex);
+  color-scheme: dark light;
+  block-size: 100%;
+  font-size :20px;
+  line-height: var(--line-height);
+  font-weight:300;
+  font-family : var(--font-sans);
+  font-family: 'Roboto Condensed', sans-serif;  cursor: default;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  margin:0;
+  padding:0;
+}
+
+.card {
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: .125rem;
+  border: 1px solid #000;
+  font-size:0.6325rem;
+}
+
+.visual {
+    height: 6.5ch;
+    width: 100%;
+  }
+
+.parent {
+display: flex;
+flex-direction:row;	
+align-items:center;
+justify-content:flex-end;
+}
+
+.children {
+display: flex;
+flex-direction:column;
+background:#efefef;
+  gap: 0.5rem;
+}
+
+.kid01 {order: 1;}
+.kid02 {order: 2;}
+.kid03 {order: 3;}
+.kid04 {order: 4;}
+.kid05 {order: 5;}
+.kid06 {order: 6;}
+.kid07 {order: 7;}
+.kid08 {order: 8;}
+
+
+/* Row Two */
+.ffe6e6{ background:var(--ffe6e6);}
+.dabcbc{ background:var(--dabcbc);}
+.b79393{ background:var(--b79393);}
+.z946c6c{ background:var(--946c6c);}
+.z714648{ background:var(--714648);}
+.z502326{ background:var(--502326);}
+.z300000{ background:var(--300000);}
+
+/* Row Three */
+.ffc9c7{ background:var(--ffc9c7);}
+.db9f9d{ background:var(--db9f9d);}
+.b87776{ background:var(--b87776);}
+.z955150{ background:var(--955150);}
+.z722b2e{ background:var(--722b2e);}
+.z4f000d{ background:var(--4f000d);}
+
+/* Row Four */
+.ffaba6{ background:var(--ffaba6);}
+.dc837e{ background:var(--dc837e);}
+.b95b58{ background:var(--b95b58);}
+.z953434{ background:var(--953434);}
+.z710014{ background:var(--710014);}
+
+/* Row Five red -4*/
+.ff8c83{ background:var(--ff8c83);}
+.dc645c{ background:var(--dc645c);}
+.b83b38{ background:var(--b83b38);}
+.z940016{ background:var(--940016);}
+
+/* Row Six red -3*/
+.ff6c5e{ background:var(--ff6c5e);}
+.db4239{ background:var(--db4239);}
+.b70015{ background:var(--b70015);}
+
+/* Row Seven red -2*/
+.ff4737{ background:var(--ff4737);}
+.db0010{ background:var(--db0010);}
+
+/* Row Eight red -1*/
+.ff0000{ background:var(--ff0000);}
+
+</style>
+</head>
+<body>
+    <h1>HSLA Color Triangle &ndash; Green</h1>
+
+    <div class="parent">
+    <div class="children kid08">
+    Row One<br>
+      <div class="card">
+    <div class="visual white"></div>
+    <span>#FFFFFF<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card">
+    <div class="visual grey1"></div>
+    <span>#d6d6d6<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card">
+    <div class="visual grey2"></div>
+    <span>#afafaf<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card">
+    <div class="visual grey3"></div>
+    <span>#898989<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card">
+    <div class="visual grey4"></div>
+    <span>#656565<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card">
+    <div class="visual grey5"></div>
+    <span>#434343<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card">
+    <div class="visual grey6"></div>
+    <span>#242424<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card">
+    <div class="visual black"></div>
+    <span>#000000<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+    </div>
+
+    <div class="children kid07">
+    Row Two<br>
+    <div class="card div1">
+    <div class="visual ffe6e6"></div>
+    <span>#ffe6e6<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+<div class="card div2">
+    <div class="visual dabcbc"></div>
+    <span>#dabcbc<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+<div class="card div3">
+    <div class="visual b79393"></div>
+    <span>#b79393<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+<div class="card div4">
+    <div class="visual z946c6c"></div>
+    <span>#946c6c<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+<div class="card div5">
+    <div class="visual z714648"></div>
+    <span>#714648<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+<div class="card div6">
+    <div class="visual z502326"></div>
+    <span>#502326<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+<div class="card div7">
+    <div class="visual z300000"></div>
+    <span>#300000<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+    </div>
+    <div class="children kid06">
+    Row Three<br>
+    <div class="card div8">
+    <div class="visual ffc9c7"></div>
+    <span>#ffc9c7<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div9">
+    <div class="visual db9f9d"></div>
+    <span>#db9f9d<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div10">
+    <div class="visual b87776"></div>
+    <span>#b87776<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div11">
+    <div class="visual z955150"></div>
+    <span>#955150<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div12">
+    <div class="visual z722b2e"></div>
+    <span>#722b2e<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div13">
+    <div class="visual z4f000d"></div>
+    <span>#4f000d<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+    </div>
+    <div class="children kid05">
+    Row Four<br>
+      <div class="card div14">
+    <div class="visual ffaba6"></div>
+    <span>#ffaba6<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div15">
+    <div class="visual dc837e"></div>
+    <span>#dc837e<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div16">
+    <div class="visual b95b58"></div>
+    <span>#b95b58<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div17">
+    <div class="visual z953434"></div>
+    <span>#953434<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div18">
+    <div class="visual z710014"></div>
+    <span>#710014<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+    </div>
+    <div class="children kid04">
+    Row Five<br>
+      <div class="card div19">
+    <div class="visual ff8c83"></div>
+    <span>#ff8c83<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div20">
+    <div class="visual dc645c"></div>
+    <span>#dc645c<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div21">
+    <div class="visual b83b38"></div>
+    <span>#b83b38<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div22">
+    <div class="visual z940016"></div>
+    <span>#940016<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+
+    </div>
+    <div class="children kid03">
+    Row Six<br>
+      <div class="card div23">
+    <div class="visual ff6c5e"></div>
+    <span>#ff6c5e<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div24">
+    <div class="visual db4239"></div>
+    <span>#db4239<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div25">
+    <div class="visual b70015"></div>
+    <span>#b70015<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+    </div>
+
+    <div class="children kid02">
+    Row Seven<br>
+      <div class="card div26">
+    <div class="visual ff4737"></div>
+    <span>#ff4737<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+  <div class="card div27">
+    <div class="visual db0010"></div>
+    <span>#db0010<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+
+    </div>
+    <div class="children kid01">
+    Row Eight<br>
+      <div class="card div28">
+    <div class="visual ff0000"></div>
+    <span>#FF0000<br>
+    255, 0, 0, 1<br>
+    0, 100%, 50%, 1</span>
+  </div>
+
+
+    </div>
+    </div><!-- END PARENT -->
+
+
+
+</body>
+</html>
