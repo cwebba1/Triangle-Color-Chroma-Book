@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HSLA Color Triangle – Blue 240 0000FF</title>
-<!-- HSL-color-triangle-BLUE-240.html
-  HSL-color-triangle-Cyan.html
+    <title>HSLA Color Triangle – Orange 24 FF6600</title>
+<!-- HSL-color-triangle-Orange.html
+    HSL-color-triangle-05-Orange.html
     HSL-color-triangle-04-Cyan.html
     HSL-color-triangle-03.html
     HSL-test-01.html -->
@@ -20,49 +20,51 @@
 :root{
      --font-serif: ui-serif,serif;
    --font-brand-sans: "Ubuntu", Verdana, "Corbel", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    --font-sans: 'Roboto Condensed' "Open Sans", system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans, Arial, "Helvetica Neue", Helvetica,sans-serif;
+
 
 /* These are the Active Properties */
 /* Row Two */
---ffe6e6:hsla(240, 100%, 95.1%, 1);
---dabcbc:hsla(240, 28.85%, 79.61%, 1);
---b79393:hsla(240, 20%, 64.71%, 1);
---946c6c:hsla(240, 15.75%, 50.2%, 1);
---714648:hsla(240, 23.5%, 35.88%, 1);
---502326:hsla(240, 39.13%, 22.55%, 1);
---300000:hsla(240, 100%, 9.41%, 1);
+--ffe6e6:hsla(24, 100%, 95.1%, 1);
+--dabcbc:hsla(24, 28.85%, 79.61%, 1);
+--b79393:hsla(24, 20%, 64.71%, 1);
+--946c6c:hsla(24, 15.75%, 50.2%, 1);
+--714648:hsla(24, 23.5%, 35.88%, 1);
+--502326:hsla(24, 39.13%, 22.55%, 1);
+--300000:hsla(24, 100%, 9.41%, 1);
 
 /* Row Three */
---ffc9c7:hsla(240, 100%, 89.02%,1);
---db9f9d:hsla(240, 46.27%, 73.73%,1);
---b87776:hsla(240, 31.73%, 59.22%,1);
---955150:hsla(240, 30.13%, 44.9%,1);
---722b2e:hsla(240, 45.22%, 30.78%,1);
---4f000d:hsla(240, 100%, 15.49%,1);
+--ffc9c7:hsla(24, 100%, 89.02%,1);
+--db9f9d:hsla(24, 46.27%, 73.73%,1);
+--b87776:hsla(24, 31.73%, 59.22%,1);
+--955150:hsla(24, 30.13%, 44.9%,1);
+--722b2e:hsla(24, 45.22%, 30.78%,1);
+--4f000d:hsla(24, 100%, 15.49%,1);
 
 /* Row Four */
---ffaba6:hsla(240, 100%, 82.55%,1);
---dc837e:hsla(240, 57.32%, 67.84%,1);
---b95b58:hsla(240, 40.93%, 53.53%,1);
---953434:hsla(240, 48.26%, 39.41%,1);
---710014:hsla(240, 100%, 22.16%,1);
+--ffaba6:hsla(24, 100%, 82.55%,1);
+--dc837e:hsla(24, 57.32%, 67.84%,1);
+--b95b58:hsla(24, 40.93%, 53.53%,1);
+--953434:hsla(24, 48.26%, 39.41%,1);
+--710014:hsla(24, 100%, 22.16%,1);
 
 /* Row Five red -4*/
---ff8c83:hsla(240, 100%, 75.69%);
---dc645c:hsla(240, 64.65%, 61.18%);
---b83b38:hsla(240, 53.33%, 47.06%);
---940016:hsla(240, 100%, 29.02%);
+--ff8c83:hsla(24, 100%, 75.69%);
+--dc645c:hsla(24, 64.65%, 61.18%);
+--b83b38:hsla(24, 53.33%, 47.06%);
+--940016:hsla(24, 100%, 29.02%);
 
 /* Row Six red -3*/
---ff6c5e:hsla(240, 100%, 68.43%,1);
---db4239:hsla(240, 69.23%, 54.12%,1);
---b70015:hsla(240, 100%, 35.88%,1);
+--ff6c5e:hsla(24, 100%, 68.43%,1);
+--db4239:hsla(24, 69.23%, 54.12%,1);
+--b70015:hsla(24, 100%, 35.88%,1);
 
 /* Row Seven red -2*/
---ff4737:hsla(240, 100%, 60.78%,1);
---db0010:hsla(240, 100%, 42.94%,1);
+--ff4737:hsla(24, 100%, 60.78%,1);
+--db0010:hsla(24, 100%, 42.94%,1);
 
 /* Row Eight red -1*/
---ff0000:hsla(240, 100%, 50%,1);
+--ff0000:hsla(24, 100%, 50%,1);
 
 }
 
@@ -74,6 +76,8 @@
 .grey5 {background:#434343;}
 .grey6 {background:#242424;}
 .black {background:#000000;}
+
+
 
 .dot { width:4.5em; height:4.5em; border-radius:50%; border:1px solid #000; display:flex; justify-content:center; }
 
@@ -121,7 +125,6 @@ html {
 display: flex;
 flex-direction:row;	
 align-items:center;
-justify-content:flex-end;
 	}
 
 .children {
@@ -131,15 +134,7 @@ background:#efefef;
   gap: 0.5rem;
 }
 
-.kid01 {order: 1;}
-.kid02 {order: 2;}
-.kid03 {order: 3;}
-.kid04 {order: 4;}
-.kid05 {order: 5;}
-.kid06 {order: 6;}
-.kid07 {order: 7;}
-.kid08 {order: 8;}
-
+/* Classes */
 /* Row Two */
 .ffe6e6{ background:var(--ffe6e6);}
 .dabcbc{ background:var(--dabcbc);}
@@ -185,10 +180,10 @@ background:#efefef;
 </style>
 </head>
 <body>
-    <h1>HSLA Color Triangle &ndash; Blue 240 0000FF</h1>
+    <h1>HSLA Color Triangle &ndash; Orange 24 #FF6600</h1>
 
     <div class="parent">
-    <div class="children kid08">
+    <div class="children">
     Row One<br>
       <div class="card">
     <div class="visual white"></div>
@@ -247,7 +242,7 @@ background:#efefef;
   </div>
     </div>
 
-    <div class="children kid07">
+    <div class="children">
     Row Two<br>
     <div class="card div1">
     <div class="visual ffe6e6"></div>
@@ -299,7 +294,7 @@ background:#efefef;
   </div>
 
     </div>
-    <div class="children kid06">
+    <div class="children">
     Row Three<br>
     <div class="card div8">
     <div class="visual ffc9c7"></div>
@@ -344,7 +339,7 @@ background:#efefef;
   </div>
 
     </div>
-    <div class="children kid05">
+    <div class="children">
     Row Four<br>
       <div class="card div14">
     <div class="visual ffaba6"></div>
@@ -382,7 +377,7 @@ background:#efefef;
   </div>
 
     </div>
-    <div class="children kid04">
+    <div class="children">
     Row Five<br>
       <div class="card div19">
     <div class="visual ff8c83"></div>
@@ -414,7 +409,7 @@ background:#efefef;
 
 
     </div>
-    <div class="children kid03">
+    <div class="children">
     Row Six<br>
       <div class="card div23">
     <div class="visual ff6c5e"></div>
@@ -439,7 +434,7 @@ background:#efefef;
 
     </div>
 
-    <div class="children kid02">
+    <div class="children">
     Row Seven<br>
       <div class="card div26">
     <div class="visual ff4737"></div>
@@ -457,7 +452,7 @@ background:#efefef;
 
 
     </div>
-    <div class="children kid01">
+    <div class="children">
     Row Eight<br>
       <div class="card div28">
     <div class="visual ff0000"></div>
@@ -469,7 +464,6 @@ background:#efefef;
 
     </div>
     </div><!-- END PARENT -->
-
 
 
 </body>
