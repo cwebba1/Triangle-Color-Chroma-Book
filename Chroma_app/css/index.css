@@ -1,0 +1,64 @@
+@import url("//fonts.googleapis.com/css2?family=Poppins");
+
+html,
+body{font-family:poppins;
+    height:100%;
+padding:0;
+margin:0;
+}
+
+.color-inputs {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.color-inputs .color-input-item {
+    margin:4px;
+}
+
+.color-inputs .color-input-item input {
+    border:0;
+    padding:0;
+    margin:9;
+    outline:0;
+    height:40px;
+    width:40px;
+}
+.color-inputs .pallete-count-item select {
+    height:34px;
+    margin:4px;
+
+} 
+.palette {
+    display:flex;
+    border: 1px solid #ABCDEF;
+    flex-wrap:nowrap;
+    height:calc(80% - 120px);
+    margin:0 1em 1em;
+}
+
+.palette-item {
+    background:var(--palette-color);
+    height:300px;
+    width:150px;
+    position:relative;
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+}
+
+.palette-color-value {
+    text-align: center;
+}
+
+.palette-list {
+    height:30px;
+    width:150px;
+/*    position:relative;
+    flex:1;*/
+}
+
+.list  {
+    
+}
